@@ -11,18 +11,22 @@
   "dependencies": {
     "@clerk/nextjs": "^4.11.13",
     "@clerk/themes": "^1.6.4",
+    "@supabase/supabase-js": "^2.33.1",
+    "@tremor/react": "^3.6.1",
     "eslint-config-next": "^13.4.2",
-    "next": "^13.3.1",
+    "next": "^13.4.19",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.10.1",
     "tailwindcss": "^3.3.2"
   },
   "license": "MIT",
   "keywords": [
     "next",
     "daisyui",
-    "clerkdev"
+    "clerkdev",
+    "supabase"
   ],
   "description": "Lexington Tech Demo",
   "devDependencies": {

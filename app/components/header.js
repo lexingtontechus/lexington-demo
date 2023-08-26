@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import {
   SignInButton,
   SignIn,
@@ -7,12 +8,11 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
-//import { Navbar, Button, Link, Text } from "@nextui-org/react";
-import Image from "next/image";
+import { AiOutlineLogin } from "react-icons/ai";
 import Switch from "./switchtheme";
 
 const logoImage = ({ src, width, quality }) => {
-  return `https://storageapi.fleek.co/68ec2807-8eea-4ac4-84f7-af2c0c153109-bucket/lxtgroup-images/${src}?w=${width}&q=${
+  return `https://storage.fleek-internal.com/a2d41cff-44ad-49e9-a80a-2d1aafc21231-bucket/lxt-images/${src}?w=${width}&q=${
     quality || 75
   }`;
 };
@@ -20,10 +20,16 @@ const logoImage = ({ src, width, quality }) => {
 const Header = () => (
   <div className="navbar flex justify-between px-4 whitespace-normal uppercase">
     <div className="flex-1">
-      <div className="avatar py-2">
-        <div className="w-10 h-10">
+      <div className="avatar">
+        <div className="p-0 h-10 w-10">
           <Link href="/">
-            <img src="/logo_lxt.svg" />
+            <Image
+              loader={logoImage}
+              src="logo_lxt.svg"
+              width={25}
+              height={25}
+              alt="Lexington Tech"
+            />
           </Link>
         </div>
       </div>
@@ -34,11 +40,13 @@ const Header = () => (
       <UserButton />
     </SignedIn>
     {/* Signed out users get sign in button */}
-    <SignInButton mode="modal">
-      <button className="btn btn-secondary mask mask-hexagon">
-        <Connect />
-      </button>
-    </SignInButton>
+    <SignedOut>
+      <SignInButton mode="modal">
+        <button className="btn btn-secondary mask mask-hexagon">
+          <AiOutlineLogin />
+        </button>
+      </SignInButton>
+    </SignedOut>
     <div className="ml-2">
       <Switch />
     </div>

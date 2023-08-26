@@ -20,7 +20,7 @@ export default function Dashboard() {
 
   const d = new Date();
   return (
-    <div className="mx-auto px-8 grid grid-flow-row auto-rows-max justify-center">
+    <div className="mx-auto m-8 grid grid-flow-row auto-rows-max justify-center">
       <div className="m-4">
         <h1 className="text-4xl font-bold uppercase py-2 text-primary">
           Sales Widget
@@ -47,7 +47,7 @@ export default function Dashboard() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
                 fill="none"
-                className="inline-block w-8 h-8 stroke-current fill-current"
+                className="inline-block w-8 h-8 stroke-success fill-success"
               >
                 <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
               </svg>
@@ -63,7 +63,7 @@ export default function Dashboard() {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 576 512"
                 fill="none"
-                className="inline-block w-8 h-8 stroke-current fill-current"
+                className="inline-block w-8 h-8 stroke-success fill-success"
               >
                 <path d="M384 160c-17.7 0-32-14.3-32-32s14.3-32 32-32H544c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32s-32-14.3-32-32V205.3L342.6 374.6c-12.5 12.5-32.8 12.5-45.3 0L192 269.3 54.6 406.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160c12.5-12.5 32.8-12.5 45.3 0L320 306.7 466.7 160H384z" />
               </svg>
@@ -127,7 +127,7 @@ export default function Dashboard() {
 
       <div className="m-4">
         <h1 className="text-4xl font-bold uppercase py-2 text-primary">
-          Analytics Widget
+          Web Analytics Widget
         </h1>
         <h2 className="text-xl font-bold uppercase py-2">
           {monthNames[d.getMonth()]} {new Date().getFullYear()}
