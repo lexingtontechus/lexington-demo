@@ -4,5 +4,8 @@ export const metadata = {
   title: "Products | Lexington Demo",
 };
 
-const Products = () => <ProductsPage />;
+const Products = () => {
+  return <ProductsPage />;
+};
+
 export default Products;

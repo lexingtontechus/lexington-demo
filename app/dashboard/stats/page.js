@@ -9,8 +9,11 @@ const Stats = () => {
   return (
     <div className="my-4 px-8 mx-auto">
       <h1 className="text-5xl font-bold uppercase text-center py-4">
-        Statistical Analysis
+        Dashboard Summary of Statisical Models
       </h1>
+      <h2 className="text-3xl font-bold uppercase text-center py-4">
+        Statistical Analysis
+      </h2>
       <div className="p-8 mx-auto max-w-2xl">
         <KPIS />
         <div className="divider"></div>

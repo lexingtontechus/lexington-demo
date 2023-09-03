@@ -1,14 +1,9 @@
-import Script from "next/script";
+import Link from "next/link";
+
 import NewsPage from "./news";
 
-export const metadata = {
-  title: "News",
+const News = () => {
+  return <NewsPage/>
 };
 
-export default function News() {
-  return (
-    <div>
-      <NewsPage />
-    </div>
-  );
-}
+export default News;

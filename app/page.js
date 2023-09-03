@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DashboardLink from "./components/dashboardlink";
 
 export const metadata = {
   viewport: {
@@ -61,7 +62,9 @@ export default function Home() {
               Lexington Tech
             </Link>
           </p>
-          <p className="py-4">Connect To Access The Demo</p>
+          <p className="py-4">
+            <DashboardLink />
+          </p>
         </div>
       </div>
     </div>

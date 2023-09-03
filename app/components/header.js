@@ -26,8 +26,8 @@ const Header = () => (
             <Image
               loader={logoImage}
               src="logo_lxt.svg"
-              width={25}
-              height={25}
+              width={20}
+              height={20}
               alt="Lexington Tech"
             />
           </Link>
@@ -42,7 +42,7 @@ const Header = () => (
     {/* Signed out users get sign in button */}
     <SignedOut>
       <SignInButton mode="modal">
-        <button className="btn btn-secondary mask mask-hexagon">
+        <button className="btn btn-sm btn-secondary mask mask-hexagon">
           <AiOutlineLogin />
         </button>
       </SignInButton>

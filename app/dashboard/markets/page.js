@@ -6,6 +6,9 @@ const Markets = () => {
   return (
     <div className="my-4 px-8">
       <h1 className="text-5xl font-bold uppercase text-center py-4">
+        Financial Data Integration With Market Performance API Datasets
+      </h1>
+      <h1 className="text-33xl font-bold uppercase text-center py-4">
         Market Performance
       </h1>
       <MarketsCandle className="py-4" />

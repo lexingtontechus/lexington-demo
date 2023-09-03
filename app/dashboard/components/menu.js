@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import { Badge, BadgeDelta } from "@tremor/react";
+
 import {
   AiFillDashboard,
   AiOutlineAreaChart,
   AiOutlineStock,
+  AiFillShop,
 } from "react-icons/ai";
 
 const DashboardMenu = () => (
@@ -26,6 +27,12 @@ const DashboardMenu = () => (
         <Link href="/dashboard/stats">
           <AiOutlineAreaChart className="h-5 w-5 fill-sky-700" />
           Stats
+        </Link>
+      </li>
+      <li className="tooltip" data-tip="Products">
+        <Link href="/dashboard/products">
+          <AiFillShop className="h-5 w-5 fill-purple-700" />
+          Products
         </Link>
       </li>
     </ul>

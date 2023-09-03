@@ -20,9 +20,12 @@ export default function Dashboard() {
 
   const d = new Date();
   return (
-    <div className="mx-auto m-8 grid grid-flow-row auto-rows-max justify-center">
-      <div className="m-4">
-        <h1 className="text-4xl font-bold uppercase py-2 text-primary">
+    <div className="mx-auto m-4 grid grid-flow-row auto-rows-max text-center">
+      <h1 className="text-5xl font-bold uppercase text-center py-4">
+        Dashboard Summary of Business KPIS
+      </h1>
+      <div className="m-4 justify-between">
+        <h1 className="text-3xl font-bold uppercase py-2 text-primary">
           Sales Widget
         </h1>
         <h2 className="text-xl font-bold uppercase py-2">
@@ -78,7 +81,7 @@ export default function Dashboard() {
       </div>
 
       <div className="m-4">
-        <h1 className="text-4xl font-bold uppercase py-2 text-primary">
+        <h1 className="text-3xl font-bold uppercase py-2 text-primary">
           Portfolio Widget
         </h1>
         <h2 className="text-xl font-bold uppercase py-2">
@@ -126,7 +129,7 @@ export default function Dashboard() {
       </div>
 
       <div className="m-4">
-        <h1 className="text-4xl font-bold uppercase py-2 text-primary">
+        <h1 className="text-3xl font-bold uppercase py-2 text-primary">
           Web Analytics Widget
         </h1>
         <h2 className="text-xl font-bold uppercase py-2">
@@ -198,7 +201,7 @@ export default function Dashboard() {
       </div>
 
       <div className="m-4">
-        <h1 className="text-4xl font-bold uppercase py-2 text-primary">
+        <h1 className="text-3xl font-bold uppercase py-2 text-primary">
           Social Widget
         </h1>
         <h2 className="text-xl font-bold uppercase py-2">
