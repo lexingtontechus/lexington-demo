@@ -34,14 +34,14 @@ const Header = () => (
         </div>
       </div>
     </div>
-
-    <SignedIn>
+       
+    <SignedIn routing="path" redirectUrl="/dashboard" afterSignUpUrl="/dashboard" afterSignInUrl="/dashboard">
       {/* Mount the UserButton component */}
       <UserButton />
     </SignedIn>
     {/* Signed out users get sign in button */}
     <SignedOut>
-      <SignInButton mode="modal">
+      <SignInButton mode="modal" routing="path" redirectUrl="/dashboard" afterSignUpUrl="/dashboard" afterSignInUrl="/dashboard">
         <button className="btn btn-sm btn-secondary mask mask-hexagon">
           <AiOutlineLogin />
         </button>

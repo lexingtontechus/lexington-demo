@@ -1,16 +1,13 @@
+"use client";
 import Link from "next/link";
 import DashboardLink from "./components/dashboardlink";
+import PopupWidget from "./components/popupWidget";
+import Cal from "./components/cal"
+import TechStack from "./components/techstack";
 
-export const metadata = {
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-  },
-  title: "Home",
-};
 export default function Home() {
   return (
+    <>
     <div className="hero min-h-screen">
       <div className="hero-content text-center">
         <div className="max-w-lg">
@@ -20,37 +17,11 @@ export default function Home() {
           <h2 className="text-3xl font-bold uppercase py-4">
             High performance scalable full-stack Web applications
           </h2>
-          <h3 className="py-4 text-2xl font-semibold">
-            <Link
-              href="https://nextjs.org"
-              target="_blank"
-              className="font-bold text-primary"
-            >
-              NextJS
-            </Link>{" "}
-            App Router
-          </h3>
           <p className="py-4">
-            Featuring{" "}
-            <Link
-              href="https://daisyui.com"
-              target="_blank"
-              className="font-bold text-primary"
-            >
-              DaisyUI
-            </Link>{" "}
-            Next Theme Integration.
-          </p>
+            <TechStack/>
+            </p>
           <p className="py-4">
-            Featuring{" "}
-            <Link
-              href="https://clerkdev.com"
-              target="_blank"
-              className="font-bold text-primary"
-            >
-              ClerkJS
-            </Link>{" "}
-            WEB3 Authentication.
+            <DashboardLink />
           </p>
           <p className="py-4">
             Powered by{" "}
@@ -62,11 +33,12 @@ export default function Home() {
               Lexington Tech
             </Link>
           </p>
-          <p className="py-4">
-            <DashboardLink />
-          </p>
+
         </div>
       </div>
+      <Cal/>
+      
     </div>
+    </>
   );
 }

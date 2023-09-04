@@ -22,9 +22,10 @@ function NewsPage() {
   return (
     <div className="mx-auto">
       <h1 className="text-5xl uppercase font-semibold p-4 text-center">News</h1>
+      <h2 className="text-2xl uppercase font-semibold p-4 text-center">Tech Crunch API Integration </h2>
       <div className="m-4 px-8 mx-auto justify-between flex flex-grow flex-wrap gap-4">
         {loading ? (
-          <h1 className="text-2xl uppercase font-semibold">
+          <h1 className="text-2xl uppercase font-semibold mx-auto">
             Loading News{" "}
             <span className="loading loading-ring loading-sm"></span>
           </h1>

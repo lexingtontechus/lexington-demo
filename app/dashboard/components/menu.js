@@ -7,6 +7,7 @@ import {
   AiOutlineStock,
   AiFillShop,
 } from "react-icons/ai";
+import {FaNewspaper} from "react-icons/fa6";
 
 const DashboardMenu = () => (
   <div className="mx-auto mt-4">
@@ -27,6 +28,12 @@ const DashboardMenu = () => (
         <Link href="/dashboard/stats">
           <AiOutlineAreaChart className="h-5 w-5 fill-sky-700" />
           Stats
+        </Link>
+      </li>
+      <li className="tooltip" data-tip="Products">
+        <Link href="/dashboard/news">
+          <FaNewspaper className="h-5 w-5 fill-red-700" />
+          News
         </Link>
       </li>
       <li className="tooltip" data-tip="Products">
