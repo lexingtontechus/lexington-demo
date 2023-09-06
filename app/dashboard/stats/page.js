@@ -9,10 +9,10 @@ const Stats = () => {
   return (
     <div className="my-4 px-8 mx-auto">
       <h1 className="text-5xl font-bold uppercase text-center py-4">
-        Dashboard Summary of Statisical Models
-      </h1>
-      <h2 className="text-3xl font-bold uppercase text-center py-4">
         Statistical Analysis
+      </h1>
+      <h2 className="text-xl text-center py-4">
+        This is a showcase of a dashboard summary of statisical models.
       </h2>
       <div className="p-8 mx-auto max-w-2xl">
         <KPIS />

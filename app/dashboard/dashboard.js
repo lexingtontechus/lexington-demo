@@ -21,19 +21,13 @@ const {isSignedIn, user } = useUser();
   const d = new Date();
   return (
     <div className="mx-auto m-4 grid grid-flow-row auto-rows-max text-center">
-       <h1 className="text-5xl font-bold uppercase text-center py-4">
-       {!isSignedIn ? (
-        <>Welcome  </>):(<>
-          Welcome {user.firstName}
-          </>
-        )}
-      </h1>
-      <h2 className="text-2xl font-bold uppercase text-center py-4">
-        Supported by Clerk Authentication & User Management
-        </h2>
       <h1 className="text-5xl font-bold uppercase text-center py-4">
         Dashboard Summary of Business KPIS
       </h1>
+      
+      <h2 className="text-xl text-center py-4">
+        This is a showcase of a custom dashboard built with responsive widgets summarizingg business metrics.
+      </h2>
       <div className="m-4 justify-between">
         <h1 className="text-3xl font-bold uppercase py-2 text-primary">
           Sales Widget

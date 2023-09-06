@@ -5,13 +5,12 @@ import { useEffect, useState } from 'react';
 
 const ProductList = ({ products, setproducts }) => {
   const [loadingproducts, setLoadingproducts] = useState(true);
+  const supabase = createClientComponentClient()
   // on first load, fetch and set products
   useEffect(() => {
     const loadproducts = async () => {
       try {
         setLoadingproducts(true);
-        const supabase = createClientComponentClient();
-
         const { data: products } = await supabase
           .from("products")
           .select("*")
@@ -28,13 +27,19 @@ const ProductList = ({ products, setproducts }) => {
 
   // if loading, just show basic message
   if (loadingproducts) {
-    return <div className="uppercase">Loading...</div>;
+    return (
+    <div className="container mx-auto p-4"><div className="uppercase text-2xl text-center">Loading
+    <p className="py-6">
+            <span className="h-32 loading loading-bars loading-xs"></span>
+            <span className="h-32 loading loading-bars loading-sm"></span>
+            <span className="h-32 loading loading-bars loading-md"></span>
+            <span className="h-32 loading loading-bars loading-lg"></span>
+          </p></div>
+    </div>);
   }
 
   // display all the products
   return (
-    <>
-      {products?.length > 0 ? (
         <div className="flex flex-wrap gap-4 content-center justify-center">
           {products.map((product) => (
             <div
@@ -43,8 +48,8 @@ const ProductList = ({ products, setproducts }) => {
             >
               <figure>
                 <img
-                  src="/img/logo-sunset.svg"
-                  alt="Sunset Ventures"
+                  src={product.product_url}
+                  alt={product.name}
                   className="p-4 h-32"
                 />
               </figure>
@@ -63,10 +68,6 @@ const ProductList = ({ products, setproducts }) => {
             </div>
           ))}
         </div>
-      ) : (
-        <div className="text-accent">No products available</div>
-      )}
-    </>
   );
 };
 
@@ -74,7 +75,8 @@ export default function Products() {
   const [products, setproducts] = useState(null);
   return (
     <div className="container mx-auto">
-                  <ProductList products={products} setproducts={setproducts} />
-      </div>
+      <h1 className="text-5xl uppercase font-bold p-4 text-center">Products</h1>
+        <ProductList products={products} setproducts={setproducts} />
+   </div>
   );
 }

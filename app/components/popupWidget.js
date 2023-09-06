@@ -27,7 +27,6 @@ export default function PopupWidget() {
     <h3 className="font-bold text-lg">Contact Us</h3>
     <p>Set up a meeting to discuss a demo for your business.</p>
     <ContactForm/>
-    <p className="py-4">Press ESC key or click the button below to close</p>
     <div className="modal-action">
       {/* if there is a button in form, it will close the modal */}
       <button className="btn">Close</button>

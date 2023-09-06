@@ -14,7 +14,7 @@ export default function TradingView() {
           TradingView.chart(tradingview_embed_options);
         </Script>
       </div>
-      <p>
+      <div className="text-md uppercase py-2">
         <Link href="https://www.tradingview.com/chart/BBTT/Uh56j6xv-BTAB/">
           OTC:BBTT
         </Link>{" "}
@@ -22,7 +22,7 @@ export default function TradingView() {
         <Link href="https://www.tradingview.com/u/LexingtonTech/">
           Lexington Tech
         </Link>
-      </p>
+      </div>
     </div>
   );
 }

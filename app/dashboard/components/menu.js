@@ -2,6 +2,7 @@
 import Link from "next/link";
 
 import {
+  AiTwotoneHome,
   AiFillDashboard,
   AiOutlineAreaChart,
   AiOutlineStock,
@@ -12,7 +13,12 @@ import {FaNewspaper} from "react-icons/fa6";
 const DashboardMenu = () => (
   <div className="mx-auto mt-4">
     <ul className="menu bg-base-200 menu-horizontal rounded-box">
-      <li className="tooltip" data-tip="Dashboard">
+      <li className="tooltip" data-tip="Home">
+        <Link href="/">
+          <AiTwotoneHome className="h-5 w-5 fill-zinc-200" />
+          Home
+        </Link>
+      </li><li className="tooltip" data-tip="Dashboard">
         <Link href="/dashboard">
           <AiFillDashboard className="h-5 w-5 fill-primary" />
           Dashboard

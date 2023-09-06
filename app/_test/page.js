@@ -11,7 +11,6 @@ export default function Test() {
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">LOADING</h1>
           <p className="py-6">
-            {" "}
             <span className="h-32 loading loading-bars loading-xs"></span>
             <span className="h-32 loading loading-bars loading-sm"></span>
             <span className="h-32 loading loading-bars loading-md"></span>
