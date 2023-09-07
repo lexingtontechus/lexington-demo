@@ -26,7 +26,7 @@ const {isSignedIn, user } = useUser();
       </h1>
       
       <h2 className="text-xl text-center py-4">
-        This is a showcase of a custom dashboard built with responsive widgets summarizingg business metrics.
+        This is a showcase of a custom dashboard built with responsive widgets summarizing business metrics.
       </h2>
       <div className="m-4 justify-between">
         <h1 className="text-3xl font-bold uppercase py-2 text-primary">

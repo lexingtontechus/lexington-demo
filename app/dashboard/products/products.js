@@ -63,7 +63,7 @@ export default function ProductsPage() {
               <p className="text-sm">{item.description}</p>
               <p className="font-semibold text-primary-content">{item.price}</p>
               <div className="card-actions">
-                <button className="btn btn-primary">{item.action}</button>
+                <button className="btn ">{item.action}</button>
               </div>
             </div>
           </div>

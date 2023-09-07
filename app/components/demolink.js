@@ -8,7 +8,7 @@ export default function DashboardLink() {
     <>
       {isSignedIn ? (
         <>
-          <button className="btn w-64"><Link href="/dashboard">Go To Dashboard</Link></button>
+          <button className="btn w-64"><Link href="/dashboard">Go To Demo</Link></button>
         </>
       ) : (
         <div className="text-2xl uppercase">Connect To Access The Demo</div>

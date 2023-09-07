@@ -25,7 +25,7 @@ export default function PopupWidget() {
 <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
   <form method="dialog" className="modal-box">
     <h3 className="font-bold text-lg">Contact Us</h3>
-    <p>Set up a meeting to discuss a demo for your business.</p>
+    <p className="text-sm">Set up a meeting to discuss a demo for your business.</p>
     <ContactForm/>
     <div className="modal-action">
       {/* if there is a button in form, it will close the modal */}

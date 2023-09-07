@@ -108,7 +108,7 @@ export default function Terms() {
                       INTELLECTUAL PROPERTY RIGHTS
                     </div>
                     <div className="collapse-content">
-                      <p>
+                      <p className="leading-relaxed mt-1 mb-4">
                         Unless otherwise indicated, the Site and the Marketplace
                         Offerings are our proprietary property and all source
                         code, databases, functionality, software, website

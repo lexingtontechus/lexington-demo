@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import DashboardLink from "./components/dashboardlink";
+import DemoLink from "./components/demolink";
 import PopupWidget from "./components/popupWidget";
 import Cal from "./components/cal"
 import TechStack from "./components/techstack";
@@ -21,7 +21,7 @@ export default function Home() {
             <TechStack/>
             </p>
           <p className="py-4">
-            <DashboardLink />
+            <DemoLink />
           </p>
           <p className="py-4">
             Powered by{" "}

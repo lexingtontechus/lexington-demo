@@ -14,32 +14,38 @@ export default function TechStack() {
       <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
       <h1 className="py-4 text-3xl font-semibold uppercase">Tech Stack</h1>
       <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
-      {/* Sidebar content here */}
-     <li className="text-2xl font-semibold">
-     <Link
+      {/* Sidebar content here */}  
+      <li className="text-2xl font-semibold">
+      <Link
               href="https://nextjs.org"
               target="_blank"
               className="font-bold text-primary"
-            >     
+            >   
             <LogoNextJS/> <FaExternalLinkAlt className="absolute right-0 pr-2"/>
-           </Link> </li>
-            <span className="p-4 text-sm text-left">Showcase peerless performance, efficiency and developer experience.</span>
+            </Link> 
+            </li>
+        
+       <span className="p-4 text-sm text-left">Showcase peerless performance, efficiency and developer experience.</span>
           
-      <li className="text-2xl font-semibold"><Link
+      <li className="text-2xl font-semibold">
+        <Link
               href="https://daisyui.com"
               target="_blank"
               className="font-bold text-primary"
             >
-              <LogoDaisyUI/><span>DaisyUI</span><FaExternalLinkAlt className="absolute right-0 pr-2"/>
-            </Link></li>
+              <LogoDaisyUI/> DaisyUI <FaExternalLinkAlt className="absolute right-0 pr-2"/>
+            </Link>
+            </li>
             <span className="p-4 text-sm text-left">DaisyUI adds class names to <span><Link href="https://tailwindcss.com" target="_blank" className="text-primary">Tailwind CSS</Link></span> (Utility-first CSS framework) for all common UI components. Adding component class names to Tailwind CSS make beautiful websites faster than ever.</span>
-              <li className="text-2xl font-semibold"><Link
+      <li className="text-2xl font-semibold">
+        <Link
               href="https://clerkdev.com"
               target="_blank"
               className="font-bold text-primary"
             >
               <LogoClerkDev/> <FaExternalLinkAlt className="absolute right-0 pr-2"/>
-            </Link></li>
+            </Link>
+      </li>
             <span className="p-4 text-sm text-left">B2B SaaS Authentication & User Management with prebuilt NextJS UI components</span>
     </ul>
   
