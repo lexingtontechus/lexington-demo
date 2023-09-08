@@ -1,8 +1,11 @@
 # Lexington Tech Demo
 
-## NextJS App Router
+## [NextJS App Router](https://nextjs.org)
+High performance scalable full-stack frameworks.
 
-## DaisyUI
+## [daisyUI](https://daisyui.com)
+daisyUI - class names utility-first CSS framework for Tailwind CSS.
 
-## Clerk Authentication
+## [Clerk](https://clerk.com)
+B2B Saas Authentication & User Management.
 

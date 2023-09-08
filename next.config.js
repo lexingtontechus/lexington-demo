@@ -8,7 +8,9 @@ const nextConfig = {
   basePath: "",
   pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
   images: {
-    //domains: ["storageapi.fleek.co", "savivets.wpengine.com"],
+    dangerouslyAllowSVG: true,
+    contentDispositionType: "attachment",
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
     remotePatterns: [
       {
         protocol: "https",
