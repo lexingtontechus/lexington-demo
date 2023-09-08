@@ -17,13 +17,13 @@ export default function Home() {
           <h2 className="text-3xl font-bold uppercase py-4">
             High performance scalable full-stack Web applications
           </h2>
-          <p className="py-4">
+          <div className="py-4">
             <TechStack/>
-            </p>
-          <p className="py-4">
+            </div>
+          <div className="py-4">
             <DemoLink />
-          </p>
-          <p className="py-4">
+          </div>
+          <div className="py-4">
             Powered by{" "}
             <Link
               href="https://lexingtontech.us"
@@ -32,7 +32,7 @@ export default function Home() {
             >
               Lexington Tech
             </Link>
-          </p>
+          </div>
 
         </div>
       </div>

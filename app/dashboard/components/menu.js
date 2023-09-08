@@ -11,7 +11,7 @@ import {
 import {FaNewspaper} from "react-icons/fa6";
 
 const DashboardMenu = () => (
-  <div className="mx-auto mt-4">
+  <div className="text-center mx-auto mt-4">
     <ul className="menu bg-base-200 menu-horizontal rounded-box">
       <li className="tooltip" data-tip="Home">
         <Link href="/">
@@ -30,10 +30,10 @@ const DashboardMenu = () => (
           Markets
         </Link>
       </li>
-      <li className="tooltip" data-tip="Statistical Analysis">
-        <Link href="/dashboard/stats">
+      <li className="tooltip" data-tip="Business KPIs">
+        <Link href="/dashboard/kpis">
           <AiOutlineAreaChart className="h-5 w-5 fill-sky-700" />
-          Stats
+          KPIs
         </Link>
       </li>
       <li className="tooltip" data-tip="Products">

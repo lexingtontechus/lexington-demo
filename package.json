@@ -5,6 +5,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "export": "next export",
     "post-update": "yarn upgrade --latest"
   },
@@ -13,8 +14,6 @@
     "@clerk/nextjs": "^4.11.13",
     "@clerk/themes": "^1.6.4",
     "@formspree/react": "^2.5.1",
-    "@supabase/auth-helpers-nextjs": "^0.7.4",
-    "@supabase/supabase-js": "^2.33.1",
     "@tremor/react": "^3.6.1",
     "axios": "^1.5.0",
     "next": "^13.4.19",

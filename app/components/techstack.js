@@ -33,10 +33,10 @@ export default function TechStack() {
               target="_blank"
               className="font-bold text-primary"
             >
-              <LogoDaisyUI/> DaisyUI <FaExternalLinkAlt className="absolute right-0 pr-2"/>
+              <LogoDaisyUI/> daisyUI <FaExternalLinkAlt className="absolute right-0 pr-2"/>
             </Link>
             </li>
-            <span className="p-4 text-sm text-left">DaisyUI adds class names to <span><Link href="https://tailwindcss.com" target="_blank" className="text-primary">Tailwind CSS</Link></span> (Utility-first CSS framework) for all common UI components. Adding component class names to Tailwind CSS make beautiful websites faster than ever.</span>
+            <span className="p-4 text-sm text-left">daisyUI adds class names to <span><Link href="https://tailwindcss.com" target="_blank" className="text-primary">Tailwind CSS</Link></span> (Utility-first CSS framework) for all common UI components. Adding component class names to Tailwind CSS make beautiful websites faster than ever.</span>
       <li className="text-2xl font-semibold">
         <Link
               href="https://clerkdev.com"
@@ -102,7 +102,7 @@ function LogoDaisyUI(){
   return(<svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 1024 1024" fill="none">
   <rect x="256" y="670.72" width="512" height="256" rx="128" fill="#1AD1A5"/>
   <circle cx="512" cy="353.28" r="256" fill="white"/>
-  <circle cx="512" cy="353.28" r="261" stroke="black" stroke-opacity="0.2" stroke-width="10"/>
+  <circle cx="512" cy="353.28" r="261" stroke="black" strokeOpacity="0.2" strokeWidth="10"/>
   <circle cx="512" cy="353.28" r="114.688" fill="#FF9903"/>
   </svg>);
 }

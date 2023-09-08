@@ -17,7 +17,7 @@ export default function DashboardLayout({ children }) {
   }
 
   return (
-    <div className="grid place-content-center px-8 mx-auto mb-8">
+    <div className="container grid place-content-center px-8 mx-auto mb-8">
       <DashboardMenu />
       {children}
     </div>
