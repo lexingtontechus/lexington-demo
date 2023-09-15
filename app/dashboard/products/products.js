@@ -45,7 +45,7 @@ export default function ProductsPage() {
   return (
     <div className="container mx-auto m-8 max-w-2xl">
       <h1 className="text-5xl uppercase font-bold p-4 text-center">Products</h1>
-       <h3 className="text-xl text-center py-4">
+      <h3 className="text-xl text-center py-4">
         This is a showcase of an eCommerce pricing model.
       </h3>
       <div className="flex flex-wrap gap-4 content-center justify-center">
@@ -54,7 +54,7 @@ export default function ProductsPage() {
             key={item.id}
             className="grow card card-bordered bg-secondary shadow-xl max-w-[300px] max-h-[500px] rounded-xl "
           >
-            <figure className="image-full">
+            <figure className="image-full h-[250px]">
               <img src={item.producturl} alt={item.name} />
             </figure>
             <div className="card-body items-center text-center">
