@@ -6,7 +6,7 @@ import {
   SignInButton,
   SignUpButton,
 } from "@clerk/nextjs";
-import DashboardMenu from "./components/menu";
+import DashboardMenu from "./menu";
 import { redirect } from "next/navigation";
 
 export default function DashboardLayout({ children }) {
