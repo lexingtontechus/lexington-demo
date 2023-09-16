@@ -4,7 +4,7 @@ export const metadata = {
   title: "KPIs | Lexington Demo",
 };
 
-const Products = () => {
+const KPIs = () => {
   return <KPIsPage />;
 };
 
