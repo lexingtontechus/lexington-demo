@@ -1,7 +1,6 @@
-"use client"
+"use client";
 
-export default function KPIS() {
-const {isSignedIn, user } = useUser();
+export default function KPISPage() {
   const monthNames = [
     "January",
     "February",
@@ -23,9 +22,10 @@ const {isSignedIn, user } = useUser();
       <h1 className="text-5xl font-bold uppercase text-center py-4">
         Summary of Business KPIs
       </h1>
-      
+
       <h2 className="text-xl text-center py-4">
-        This is a showcase of a custom with responsive widgets summarizing business KPIs.
+        This is a showcase of a custom with responsive widgets summarizing
+        business KPIs.
       </h2>
       <div className="m-4 justify-between">
         <h1 className="text-3xl font-bold uppercase py-2 text-primary">

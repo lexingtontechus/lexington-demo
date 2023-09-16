@@ -38,7 +38,7 @@ function NewsPage() {
               className="card w-96 bg-base-200 shadow-xl max-h-[500px]"
               key={post.id}
             >
-              <figure className="image-full">
+              <figure className="image-full h-32">
                 <img
                   src={post.jetpack_featured_media_url}
                   alt={post.title.rendered}

@@ -1,11 +1,11 @@
-import KPIsPage from "./kpis";
+import KPISPage from "./kpis";
 
 export const metadata = {
   title: "KPIs | Lexington Demo",
 };
 
-const KPIs = () => {
-  return <KPIsPage />;
+const KPIS = () => {
+  return <KPISPage />;
 };
 
-export default KPIs;
+export default KPIS;
