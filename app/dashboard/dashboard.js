@@ -1,9 +1,9 @@
 "use client";
-import KPIS from "./components/kpis";
-import Performance from "./components/performance";
-import WebAnalyics from "./components/webanalytics";
-import Sales from "./components/sales";
-import RegionalSales from "./components/regionalsales";
+import KPIS from "./kpis";
+import Performance from "./performance";
+import WebAnalyics from "./webanalytics";
+import Sales from "./sales";
+import RegionalSales from "./regionalsales";
 
 const Dashboard = () => {
   return (
