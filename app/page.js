@@ -1,8 +1,8 @@
 "use client";
 import Link from "next/link";
 import DemoLink from "./components/demolink";
-import PopupWidget from "./components/popupWidget";
-import Cal from "./components/cal"
+//import PopupWidget from "./components/popupWidget";
+
 import TechStack from "./components/techstack";
 
 export default function Home() {
@@ -35,9 +35,7 @@ export default function Home() {
           </div>
 
         </div>
-      </div>
-      <Cal/>
-      
+      </div>      
     </div>
     </>
   );
