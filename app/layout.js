@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import "/styles/index.css";
 import "/styles/globals.css";
 import { Providers } from "./providers";
-
+import Cal from "./components/cal";
 export const metadata = {
   title: {
     default: "Lexington Demo",
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Footer />
+            <Cal />
           </Providers>
         </body>
       </html>
