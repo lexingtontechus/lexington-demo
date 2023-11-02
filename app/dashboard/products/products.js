@@ -1,201 +1,128 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useSession, useUser } from "@clerk/nextjs";
-import { createClient } from "@supabase/supabase-js";
+const products = [
+  {
+    name: "StartUps",
+    tagline: "Launch your MVP.",
+    price: "$2500 per month",
+    action: "Subscribe",
+    description:
+      "Accelerate your StartUp through the Lexington Pilot Program. Develop a prototype to validate product-market fit.",
+    technology: "Prototype Web App built on the Lexington StartUp solution.",
+    consultingmanagement: "40hrs of consulting team advisory.",
+    projectmanagement: "40hrs of Project team advisory.",
+    product: "80hrs technology development of MVP prototype.",
+    ai: "AI driven design workflow.",
+    web3: "Out the box support for Web3 Authentication & User Management.",
+    support: "Discord support.",
+    producturl: "/product1.jpg",
+  },
+  {
+    name: "Consulting Management",
+    tagline: "Supercharge your business.",
+    price: "$5000 per month",
+    action: "Subscribe",
+    description:
+      "Engage the Lexington consulting team to create a business & technology roadmap, strategy, product design & SaaS solution.",
+    technology:
+      "Custom scalable technology solutions that integrate with yyour existin platform.",
+    consultingmanagement: "80hrs of Consulting team advisory.",
+    projectmanagement: "40hrs of Project team advisory.",
+    product:
+      "80hrs technology development of MVP to ideate & test product-market fit.",
+    ai: "AI driven design workflow.",
+    web3: "Web3 Authentication & User Management. Blockchain ready.",
+    support: "Slack support.",
+    producturl: "/product2.jpg",
+  },
+  {
+    name: "Project Management",
+    tagline: "Scale your business.",
+    price: "$10000 per month",
+    action: "Subscribe",
+    description:
+      "Engage the Lexington project team to develop your technology platform. Developing your product & managing the customer experience.",
+    technology:
+      "Custom scalable technology solutions that integrate with yyour existin platform.",
+    consultingmanagement: "40hrs of Consulting team advisory",
+    projectmanagement: "80hrs of Project team advisory.",
+    product: "80hrs technology development of product roadmap.",
+    ai: "AI driven design workflow.",
+    web3: "Web3 Authentication & User Management. Blockchain ready.",
+    support: "Dedicated business support.",
+    producturl: "/product3.jpg",
+  },
+  {
+    name: "Enterprise Team",
+    tagline: "Level up.",
+    price: "Contact To Discuss",
+    action: "Contact",
+    description:
+      "Embed the Lexington Professional Services team. Leverage prebuilt tech stacks, partner networks & technical capabilities.",
+    technology:
+      "Access teams with specialized knowledge or skills to address critical.",
+    consultingmanagement:
+      "Strategic modelling of your organization & future technology requirements.",
+    projectmanagement:
+      "Our Professional Services team can help your business bring to ideas to market quickly.",
+    product: "Integrate the latest technology.",
+    ai: "Prebuilt AI models for product development.",
+    web3: "Implement Web3 technologies to scale your business.",
+    support: "Global 24/7 support.",
+    producturl: "/product4.jpg",
+  },
+];
 
-const supabaseClient = async (supabaseAccessToken) => {
-  const supabase = createClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_KEY,
-    {
-      global: { headers: { Authorization: `Bearer ${supabaseAccessToken}` } },
-    },
-  );
-  // set Supabase JWT on the client object,
-  // so it is sent up with all Supabase requests
-  return supabase;
-};
-
-export default function Products() {
-  const { isSignedIn, isLoading, user } = useUser();
-  const [products, setproducts] = useState(null);
-
+export default function ProductsPage() {
   return (
-    <>
-      <div className="mx-auto">
-        <h1 className="my-4 text-5xl font-bold uppercase text-center">
-          Lexington Tech Consulting & Management Services
-        </h1>
-        <h2 className="text-2xl uppercase font-semibold p-4 text-center">
-          ClerkDev & Supabase (PostgreSQL) Integration
-        </h2>
-        <h3 className="text-xl text-center py-4">
-          This is a realtime showcase of JWT (JSON Web Token) authentication &
-          session management.
-        </h3>
+    <div className="mx-auto">
+      <h1 className="text-5xl uppercase font-bold p-4 text-center">Products</h1>
+      <h3 className="text-xl text-center py-4">
+        This is a showcase of management consulting business pricing model.
+      </h3>
+      <div className="m-4 px-8 mx-auto justify-between flex flex-grow flex-wrap gap-4">
+        {/*flex flex-wrap gap-4 content-center justify-center*/}
+        {products.map((item) => (
+          <div
+            key={item.id}
+            className="grow card card-bordered glass  shadow-xl max-w-[300px] max-h-[600px] rounded-xl "
+          >
+            <div className="card-body items-center text-center">
+              <h2 className="card-title">{item.name}</h2>
+              <h3 className="font-bold italic">{item.tagline}</h3>
+              <p className="text-sm">{item.description}</p>
+              <ul className="text-xs list-disc list-outside text-left">
+                <li>
+                  <span>Consulting Management</span> -{" "}
+                  {item.consultingmanagement}
+                </li>
+                <li>
+                  <span>Project Management</span> - {item.projectmanagement}
+                </li>
+                <li>
+                  <span>Product Management</span> - {item.product}
+                </li>
+                <li>
+                  <span>Technology</span> - {item.technology}
+                </li>
+                <li>
+                  <span>AI</span> - {item.ai}
+                </li>
+                <li>
+                  <span>Web3</span> - {item.web3}
+                </li>
+                <li>
+                  <span>Support</span> - {item.support}
+                </li>
+              </ul>
+              <p className="font-semibold text-primary">{item.price}</p>
+              <div className="card-actions">
+                <button className="btn ">{item.action}</button>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-      {isLoading ? (
-        <></>
-      ) : (
-        <section className="container mx-auto pb-8 mb-8">
-          {isSignedIn ? (
-            <>
-              {/*<AddProductForm products={products} setproducts={setproducts} />*/}
-              <div className="container mx-auto m-8">
-                <ProductList products={products} setproducts={setproducts} />
-              </div>
-            </>
-          ) : (
-            <div className="uppercase text-2xl text-center">
-              Loading Products...
-            </div>
-          )}
-        </section>
-      )}
-    </>
-  );
-}
-
-const ProductList = ({ products, setproducts }) => {
-  const { session } = useSession();
-  const [loadingproducts, setLoadingproducts] = useState(true);
-
-  // on first load, fetch and set products
-  useEffect(() => {
-    const loadproducts = async () => {
-      try {
-        setLoadingproducts(true);
-        const supabaseAccessToken = await session.getToken({
-          template: "lexington-demo",
-        });
-        const supabase = await supabaseClient(supabaseAccessToken);
-        const { data: products } = await supabase
-          .from("products")
-          .select("name,description,price,metadata")
-          .order("orderby", { ascending: true })
-          .eq("active", true);
-        setproducts(products);
-      } catch (e) {
-        alert(e);
-      } finally {
-        setLoadingproducts(false);
-      }
-    };
-    loadproducts();
-  }, []);
-
-  // if loading, just show basic message
-  if (loadingproducts) {
-    return (
-      <div className="uppercase text-2xl text-center">Loading Products ...</div>
-    );
-  }
-
-  // display all the products
-  return (
-    <>
-      {products?.length > 0 ? (
-        <div className="flex flex-wrap flex-grow gap-4 content-center justify-center">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="grow card w-64 bg-base-300 shadow-xl"
-            >
-              <figure>
-                <img
-                  src="/logo_lxt.svg"
-                  alt="Lexington Demo"
-                  className="p-4 h-32"
-                />
-              </figure>
-              <div className="card-body">
-                <div className="card-title text-2xl font-bold text-accent">
-                  {product.name}
-                </div>
-                <div className="text-sm">{product.description}</div>
-                <ul className="text-xs list-disc list-outside">
-                  <li>
-                    <span className="text-secondary">
-                      Consulting Management
-                    </span>{" "}
-                    - {product.metadata.consultingmanagement}
-                  </li>
-                  <li>
-                    <span className="text-secondary">Project Management</span> -{" "}
-                    {product.metadata.projectmanagement}
-                  </li>
-                  <li>
-                    <span className="text-secondary">Product Management</span> -{" "}
-                    {product.metadata.product}
-                  </li>
-                  <li>
-                    <span className="text-secondary">Technology</span> -{" "}
-                    {product.metadata.technology}
-                  </li>
-                  <li>
-                    <span className="text-secondary">AI</span> -{" "}
-                    {product.metadata.ai}
-                  </li>
-                  <li>
-                    <span className="text-secondary">Web3</span> -{" "}
-                    {product.metadata.web3}
-                  </li>
-                  <li>
-                    <span className="text-secondary">Support</span> -{" "}
-                    {product.metadata.support}
-                  </li>
-                </ul>
-                <h2 className="text-xl font-semi-bold">
-                  ${product.price} per Project
-                </h2>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-sm btn-primary">Subscribe</button>
-                </div>
-              </div>
-            </div>
-          ))}
-          <p className="my-4 text-sm font-bold text-center">
-            *All engagements are project time-based per the agreed Agile Sprint
-            timeframe.
-          </p>
-        </div>
-      ) : (
-        <div className="text-accent">No products or services available</div>
-      )}
-    </>
-  );
-};
-
-function AddProductForm({ products, setproducts }) {
-  const { session } = useSession();
-  const [newProduct, setNewProduct] = useState("");
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (newProduct === "") {
-      return;
-    }
-
-    const supabaseAccessToken = await session.getToken({
-      template: "lexington-demo",
-    });
-    const supabase = await supabaseClient(supabaseAccessToken);
-    const { data } = await supabase
-      .from("products")
-      .insert({ title: newProduct, user_id: session.user.id })
-      .select();
-
-    setproducts([...products, data[0]]);
-    setNewProduct("");
-  };
-
-  return (
-    <form onSubmit={handleSubmit}>
-      <input
-        onChange={(e) => setNewProduct(e.target.value)}
-        value={newProduct}
-      />
-      &nbsp;<button>Add Product</button>
-    </form>
+    </div>
   );
 }
