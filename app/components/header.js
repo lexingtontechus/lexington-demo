@@ -12,9 +12,7 @@ import { AiOutlineLogin } from "react-icons/ai";
 import Switch from "./switchtheme";
 
 const logoImage = ({ src, width, quality }) => {
-  return `https://storage.fleek-internal.com/a2d41cff-44ad-49e9-a80a-2d1aafc21231-bucket/lxt-images/${src}?w=${width}&q=${
-    quality || 75
-  }`;
+  return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
 };
 
 const Header = () => (
@@ -25,7 +23,7 @@ const Header = () => (
           <Link href="/">
             <Image
               loader={logoImage}
-              src="logo_lxt.svg"
+              src="/logo_lxt.svg"
               width={16}
               height={16}
               alt="Lexington Tech"
@@ -34,14 +32,26 @@ const Header = () => (
         </div>
       </div>
     </div>
-       
-    <SignedIn routing="path" redirectUrl="/dashboard" afterSignUpUrl="/dashboard" afterSignInUrl="/dashboard">
+
+    <SignedIn
+      routing="path"
+      redirectUrl="/dashboard"
+      afterSignUpUrl="/dashboard"
+      afterSignInUrl="/dashboard"
+      className="btn btn-sm btn-secondary mask mask-hexagon"
+    >
       {/* Mount the UserButton component */}
-      <UserButton />
+      <UserButton className="btn btn-sm btn-secondary mask mask-hexagon" />
     </SignedIn>
     {/* Signed out users get sign in button */}
     <SignedOut>
-      <SignInButton mode="modal" routing="path" redirectUrl="/dashboard" afterSignUpUrl="/dashboard" afterSignInUrl="/dashboard">
+      <SignInButton
+        mode="modal"
+        routing="path"
+        redirectUrl="/dashboard"
+        afterSignUpUrl="/dashboard"
+        afterSignInUrl="/dashboard"
+      >
         <button className="btn btn-sm btn-secondary mask mask-hexagon">
           <AiOutlineLogin />
         </button>

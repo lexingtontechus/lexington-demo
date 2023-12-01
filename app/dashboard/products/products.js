@@ -85,7 +85,7 @@ export default function ProductsPage() {
         {products.map((item) => (
           <div
             key={item.id}
-            className="grow card card-bordered glass  shadow-xl max-w-[300px] max-h-[600px] rounded-xl "
+            className="grow card card-bordered glass shadow-xl max-w-[300px] max-h-[600px] rounded-xl "
           >
             <div className="card-body items-center text-center">
               <h2 className="card-title">{item.name}</h2>
