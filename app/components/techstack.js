@@ -12,7 +12,7 @@ export default function TechStack() {
       <input id="techstack_drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}
-        <label htmlFor="techstack_drawer" className="drawer-button btn w-64">
+        <label htmlFor="techstack_drawer" className="uppercase drawer-button btn w-64">
           Tech Stack
         </label>
       </div>

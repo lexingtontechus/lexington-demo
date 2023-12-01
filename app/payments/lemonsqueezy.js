@@ -10,6 +10,11 @@ export default function LemonSqueezy() {
             Lemon Squeezy Payments Integration
           </h1>
           <h2 className="text-3xl font-bold uppercase py-4">Customer Portal</h2>
+          <p className="text-xl font-bold uppercase py-4">
+            This is a demo of Lemon Squeezy's configured products. The Customer
+            Portal supports customer self-service to manage product
+            subscriptions.
+          </p>
           <div className="flex flex-wrap flex-grow gap-8 content-center justify-center mx-auto px-8">
             <div className="card card-compact w-96 bg-base-200 shadow-xl">
               <figure>
@@ -32,7 +37,7 @@ export default function LemonSqueezy() {
                       href="https://lexington.lemonsqueezy.com/checkout/buy/fdaab53a-135b-4ecb-8db1-1810c2ae000e?embed=1"
                       class="lemonsqueezy-button"
                     >
-                      Start Trial
+                      Book Now
                     </Link>
                   </button>
                 </div>

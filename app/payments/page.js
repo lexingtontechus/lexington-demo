@@ -11,14 +11,14 @@ export default function Payments() {
         <div className="hero-content text-center">
           <div className="max-w-5xl">
             <h1 className="text-5xl uppercase font-bold p-4 text-center">
-              Payments
+              Lexington Products
             </h1>
             <h2 className="text-2xl uppercase font-semibold p-4 text-center">
-              Payment Subcription Demo
+              Powered By Enterprise Payment Subcriptions
             </h2>
             <h3 className="text-xl text-center py-4">
-              Lexington can elevate your organization from a StartUp to a
-              thriving organization.
+              Lexington Management Consulting elevates your organization from a
+              StartUp to a thriving organization.
             </h3>
 
             <ul className="justify-center timeline timeline-vertical lg:timeline-horizontal">
@@ -40,10 +40,10 @@ export default function Payments() {
                     />
                   </svg>
                 </div>
-                <hr className="bg-primary" />
+                <hr className="bg-slate-500" />
               </li>
               <li>
-                <hr className="bg-primary" />
+                <hr className="bg-orange-500" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,10 +61,10 @@ export default function Payments() {
                 <div className="timeline-end timeline-box">
                   Management Consulting
                 </div>
-                <hr className="bg-primary" />
+                <hr className="bg-lime-500" />
               </li>
               <li>
-                <hr className="bg-primary" />
+                <hr className="bg-teal-500" />
                 <div className="timeline-start timeline-box">
                   Project Management
                 </div>
@@ -82,10 +82,10 @@ export default function Payments() {
                     />
                   </svg>
                 </div>
-                <hr className="bg-secondary" />
+                <hr className="bg-blue-500" />
               </li>
               <li>
-                <hr className="bg-secondary" />
+                <hr className="bg-violet-500" />
                 <div className="timeline-middle">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +103,10 @@ export default function Payments() {
                 <div className="timeline-end timeline-box">
                   Business & Technology Elevation
                 </div>
-                <hr className="bg-secondary" />
+                <hr className="bg-fuchsia-500" />
               </li>
               <li>
-                <hr className="bg-secondary" />
+                <hr className="bg-emerald-500" />
                 <div className="timeline-start timeline-box">WEB3 & AI</div>
                 <div className="timeline-middle">
                   <svg

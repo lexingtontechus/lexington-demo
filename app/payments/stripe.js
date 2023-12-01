@@ -16,6 +16,11 @@ export default function Stripe() {
           <h2 className="text-3xl font-bold uppercase py-4">
             Stripe Elements UI + Checkout
           </h2>
+          <p className="text-xl font-bold uppercase py-4">
+            This is a demo of Stripe configured products built with Stripe
+            Elements UI. The Stripe Customer Portal supports customer
+            self-service to manage product subscriptions.
+          </p>
           <Script async src="https://js.stripe.com/v3/pricing-table.js" />
           <stripe-pricing-table
             pricing-table-id="prctbl_1OGTurKk5GPl9dsfscNRngJA"

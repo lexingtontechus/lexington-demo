@@ -15,10 +15,15 @@ export default function Home() {
             <h1 className="text-5xl font-bold uppercase py-4">
               Lexington Tech Demo
             </h1>
-           
+
             <h2 className="text-3xl font-bold uppercase py-4">
               High performance scalable full-stack Web applications
             </h2>
+            <div className="py-4">
+              <button className="btn uppercase w-64">
+                <Link href="/payments">View Our Products</Link>
+              </button>
+            </div>
             <div className="py-4">
               <TechStack />
             </div>
