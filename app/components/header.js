@@ -11,21 +11,21 @@ import {
 import { AiOutlineLogin } from "react-icons/ai";
 import Switch from "./switchtheme";
 
+import Logo from "/public/logo_lxt.png";
+
 const logoImage = ({ src, width, quality }) => {
-  return `http://localhost:3000/${src}?w=${width}&q=${quality || 75}`;
+  return `/${src}?w=${width}&q=${quality || 75}`;
 };
 
 const Header = () => (
   <div className="navbar flex justify-between px-4 whitespace-normal uppercase">
     <div className="flex-1">
       <div className="avatar">
-        <div className="p-0 h-10 w-10">
+        <div className="w-12">
           <Link href="/">
-            <Image
-              loader={logoImage}
+            <img
+              //loader={logoImage}
               src="/logo_lxt.svg"
-              width={16}
-              height={16}
               alt="Lexington Tech"
             />
           </Link>
