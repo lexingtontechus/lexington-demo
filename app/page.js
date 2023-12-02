@@ -21,7 +21,7 @@ export default function Home() {
             </h2>
             <div className="py-4">
               <button className="btn uppercase w-64">
-                <Link href="/payments">View Our Products</Link>
+                <Link href="/products">View Our Products</Link>
               </button>
             </div>
             <div className="py-4">

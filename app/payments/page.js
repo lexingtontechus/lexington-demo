@@ -10,13 +10,13 @@ export default function Payments() {
       <div className="hero min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-5xl">
-            <h1 className="text-5xl uppercase font-bold p-4 text-center">
+            <h1 className="text-5xl uppercase font-bold p-4">
               Lexington Products
             </h1>
-            <h2 className="text-2xl uppercase font-semibold p-4 text-center">
+            <h2 className="text-2xl uppercase font-semibold p-4">
               Powered By Enterprise Payment Subcriptions
             </h2>
-            <h3 className="text-xl text-center py-4">
+            <h3 className="text-xl py-4">
               Lexington Management Consulting elevates your organization from a
               StartUp to a thriving organization.
             </h3>
