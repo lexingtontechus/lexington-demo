@@ -9,7 +9,7 @@ export default authMiddleware({
     "/about",
     "/terms",
     "/privacy",
-    "products",
+    "/products",
     "/payments/(.*)",
   ],
 });
