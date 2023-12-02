@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/actions/*": ["app/actions/*"],
+      "@/api/*": ["app/api/*"],
+      "@/components/*": ["app/components/*"],
+      "@/config": ["config/"],
+      "@/lib/*": ["lib/*"],
+      "@/utils/*": ["utils/*"]
+    },
+     "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  }
+}

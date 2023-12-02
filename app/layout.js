@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { shadesOfPurple, neobrutalism, dark } from "@clerk/themes";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "./components/header";
@@ -6,6 +7,7 @@ import "/styles/index.css";
 import "/styles/globals.css";
 import { Providers } from "./providers";
 import Cal from "./components/cal";
+import PopUpCal from "./components/popupCal";
 export const metadata = {
   title: {
     default: "Lexington Demo",
@@ -28,8 +30,9 @@ export default function RootLayout({ children }) {
             <Header />
             {children}
             <Footer />
-            <Cal />
+            <PopUpCal />
           </Providers>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
