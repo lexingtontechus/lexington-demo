@@ -12,7 +12,10 @@ export default function TechStack() {
       <input id="techstack_drawer" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         {/* Page content here */}
-        <label htmlFor="techstack_drawer" className="uppercase drawer-button btn w-64">
+        <label
+          htmlFor="techstack_drawer"
+          className="uppercase drawer-button btn w-64"
+        >
           Tech Stack
         </label>
       </div>
@@ -107,6 +110,22 @@ export default function TechStack() {
           <span className="p-4 text-sm text-left">
             Lemon Squeezy Payments, tax & subscriptions for software companies.
           </span>
+
+          <li className="text-2xl font-semibold">
+            <Link
+              href="https://vercel.com"
+              target="_blank"
+              className="font-bold text-primary"
+            >
+              <LogoVercel />
+              <FaExternalLinkAlt className="absolute right-0 pr-2" />
+            </Link>
+          </li>
+          <span className="p-4 text-sm text-left">
+            Vercel’s Frontend Cloud provides the developer experience and
+            infrastructure to build, scale, and secure a faster, more
+            personalized Web.
+          </span>
         </ul>
       </div>
     </div>
@@ -117,7 +136,7 @@ function LogoNextJS() {
   return (
     <svg
       aria-label="Next.js logotype"
-      height="2em"
+      height="1.5em"
       role="img"
       viewBox="0 0 394 79"
       width="100"
@@ -254,7 +273,7 @@ function LogoLemonSqueezy() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="212"
-      height="28"
+      height="1.5em"
       viewBox="0 0 212 28"
       fill="none"
     >
@@ -354,6 +373,19 @@ function LogoLemonSqueezy() {
         d="M4.98349 12.6426L7.75465 5.04415C8.09822 4.102 8.03458 3.1412 7.67939 2.3122C6.77994 0.21378 4.34409 -0.463579 2.41853 0.309741C0.493284 1.08336 -0.594621 2.84029 0.340622 5.02253L3.63095 12.6787C3.8861 13.272 4.76261 13.2486 4.98349 12.6426Z"
         fill="#FFC233"
       />
+    </svg>
+  );
+}
+
+function LogoVercel() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="1.5em"
+      fill="#ffffff"
+      viewBox="0 0 284 65"
+    >
+      <path d="M141.68 16.25c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.46 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm117.14-14.5c-11.04 0-19 7.2-19 18s8.96 18 20 18c6.67 0 12.55-2.64 16.19-7.09l-7.65-4.42c-2.02 2.21-5.09 3.5-8.54 3.5-4.79 0-8.86-2.5-10.37-6.5h28.02c.22-1.12.35-2.28.35-3.5 0-10.79-7.96-17.99-19-17.99zm-9.45 14.5c1.25-3.99 4.67-6.5 9.45-6.5 4.79 0 8.21 2.51 9.45 6.5h-18.9zm-39.03 3.5c0 6 3.92 10 10 10 4.12 0 7.21-1.87 8.8-4.92l7.68 4.43c-3.18 5.3-9.14 8.49-16.48 8.49-11.05 0-19-7.2-19-18s7.96-18 19-18c7.34 0 13.29 3.19 16.48 8.49l-7.68 4.43c-1.59-3.05-4.68-4.92-8.8-4.92-6.07 0-10 4-10 10zm82.48-29v46h-9v-46h9zM37.59.25l36.95 64H.64l36.95-64zm92.38 5l-27.71 48-27.71-48h10.39l17.32 30 17.32-30h10.39zm58.91 12v9.69c-1-.29-2.06-.49-3.2-.49-5.81 0-10 4-10 10v14.8h-9v-34h9v9.2c0-5.08 5.91-9.2 13.2-9.2z" />
     </svg>
   );
 }
