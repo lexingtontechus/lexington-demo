@@ -6,7 +6,7 @@ export default async function Github() {
   const data = await fetch(
     "https://techcrunch.com/wp-json/wp/v2/posts?per_page=30&context=embed",
     //"https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=d582775c5d244c70ad27998eafba5694",
-    //{ cache: "no-cache" },
+    { cache: "no-cache" },
   );
   const json = await data.json();
   //const { articles } = await data.json();

@@ -9,7 +9,7 @@ export default function News() {
       <h2 className="text-2xl uppercase font-semibold p-4 text-center">
         Tech Crunch API Integration
       </h2>
-      <h3 className="text-xl text-center py-4">
+      <h3 className="text-xl text-center py-4 text-pretty">
         This is a realtime showcase of an API integration using NextJS dynamic
         client side rendering.
       </h3>
