@@ -15,15 +15,15 @@ const ThemeChanger = () => {
     <div className="flex items-center swap swap-rotate">
       {theme === "cyberpunk" ? (
         <button
-          className="btn btn-sm btn-secondary mask mask-hexagon"
+          className="btn btn-sm btn-secondary mask mask-hexagon size-12"
           onClick={() => setTheme("dracula")}
         >
           <span className="sr-only">Dark Mode</span>
-         🌙
+          🌙
         </button>
       ) : (
         <button
-          className="btn btn-sm btn-secondary mask mask-hexagon"
+          className="btn btn-sm btn-secondary mask mask-hexagon size-12"
           onClick={() => setTheme("cyberpunk")}
         >
           <span className="sr-only">Light Mode</span>
